@@ -59,7 +59,6 @@ class Main extends PluginBase{
                 $form->addInput(TextFormat::BLUE . ">" . TextFormat::LIGHT_PURPLE . ">" . TextFormat::GREEN . " Please enter a PlayerName!");
                 $form->sendToPlayer($sender);
                 return $form;
-                break;
         }
     return true;    
     }
