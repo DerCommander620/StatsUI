@@ -1,0 +1,15 @@
+name: StatsUI
+version: 1.0.0
+main: DerCommander610\StatsUI\Main
+author: DerCommander610
+api-version: 5.1
+soft-depend: 
+- FormAPI
+
+commands:
+  stats:
+    description: "See other Players Stats!"
+    permission: stats.ui.cmd
+permissions:
+  stats.ui.cmd:
+    default: true
