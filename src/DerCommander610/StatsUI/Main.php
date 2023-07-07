@@ -34,8 +34,7 @@ class Main extends PluginBase{
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
         switch($command->getName()){
             case "stats":
-                $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-                $form = $api(new CustomForm(function(Player $sander, int $data = null){
+                $form = new CustomForm(function(Player $sander, int $data = null){
                     if ($data === null) {
                         return true;
                     }
@@ -54,7 +53,7 @@ class Main extends PluginBase{
                         $form->sendToPlayer($sander);
                         return $form;
                     }
-                }));
+                });
                 $form->setTitle("§aStatsUI");
                 $form->addInput(TextFormat::BLUE . ">" . TextFormat::LIGHT_PURPLE . ">" . TextFormat::GREEN . " Please enter a PlayerName!");
                 $form->sendToPlayer($sender);
