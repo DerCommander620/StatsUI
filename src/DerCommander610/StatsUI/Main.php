@@ -5,7 +5,7 @@ use DerCommander610\StatsAPI\Deaths;
 use DerCommander610\StatsAPI\Joins;
 use DerCommander610\StatsAPI\Jumps;
 use DerCommander610\StatsAPI\Kicks;
-use jojoe77777\FormAPI\CustomForm;
+use jojoe77777\FormAPI\CustomForm as CForm;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\player\Player;
@@ -34,7 +34,7 @@ class Main extends PluginBase{
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
         switch($command->getName()){
             case "stats":
-                $form = new CustomForm(function(Player $sander, int $data = null){
+                $form = new CForm(function(Player $sander, int $data = null){
                     if ($data === null) {
                         return true;
                     }
