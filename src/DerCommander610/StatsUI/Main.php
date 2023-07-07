@@ -25,7 +25,6 @@ class Main extends PluginBase{
 
     public function onEnable(): void{
         self::setInstance($this);
-        self::
         $jumps = new Config($this->getDataFolder() . "jumps.json", Config::JSON);
         $joins = new Config($this->getDataFolder() . "joins.json", Config::JSON);
         $kicks = new Config($this->getDataFolder() . "kicks.json", Config::JSON);
