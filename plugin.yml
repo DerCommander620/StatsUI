@@ -2,7 +2,7 @@ name: StatsUI
 version: 1.0.0
 main: DerCommander610\StatsUI\Main
 author: DerCommander610
-api-version: 5.1
+api: 4.1.3
 soft-depend: 
 - FormAPI
 
