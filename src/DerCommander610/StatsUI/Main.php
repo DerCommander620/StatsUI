@@ -38,7 +38,7 @@ class Main extends PluginBase{
                     if ($data === null) {
                         return true;
                     }
-                    $player = Server::getInstance()->getPlayerExact($data[0]);
+                    $player = Server::getInstance()->getPlayerExact($data, 0);
                     if(!$player instanceof Player){
                         $sander->sendMessage("§cThis Player doesnt Exists!");
                     }else{
